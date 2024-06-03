@@ -1,10 +1,10 @@
+/* eslint-disable no-undef */
 import { useState } from 'react';
 import './dashboard.css';
 import { useEffect } from 'react';
 import Card from '../Card/Card';
 import Reports from '../Reports/Reports';
 import RecentSales from '../RecentSales/RecentSales';
-import RecentActivity from '../RecentActivity/RecentActivity';
 import BudgetReport from '../BudgetReport/BudgetReport';
 import WebTraffic from '../WebTraffic/WebTraffic';
 
@@ -13,7 +13,7 @@ const Dashboard = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://localhost:4000/cards');
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/cards`);
       const data = await response.json();
       setCards(data);
     } catch (error) {
@@ -41,7 +41,6 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="col-lg-4">
-          <RecentActivity />
           <BudgetReport />
           <WebTraffic />
         </div>

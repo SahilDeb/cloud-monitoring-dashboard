@@ -23,7 +23,7 @@ const NavNotice = () => {
           <i className="bi bi-exclamation-circle text-warning"></i>
           <div>
             <h4>Lorem ipsum</h4>
-            <p>Dolares</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <p>30min. ago</p>
           </div>
         </li>
@@ -35,8 +35,8 @@ const NavNotice = () => {
         <li className="notification-item">
           <i className="bi bi-exclamation-circle text-danger"></i>
           <div>
-            <h4>Atque rerrum neskhfks ksdsh</h4>
-            <p>QWkshsh skdsdhsd skdhs dkhs</p>
+            <h4>Cras eu ex tempus</h4>
+            <p>Duis eu justo eget ipsum sollicitudin cursus a at orci.</p>
             <p>1hr. ago</p>
           </div>
         </li>
@@ -48,8 +48,8 @@ const NavNotice = () => {
         <li className="notification-item">
           <i className="bi bi-exclamation-circle text-success"></i>
           <div>
-            <h4>Sit kdhs khshd</h4>
-            <p>Qiewhsdh deole dksh kshd</p>
+            <h4>In ultrices quam ac facilisis</h4>
+            <p>Maecenas condimentum sapien id eros feugiat consequat.</p>
             <p>2hr. ago</p>
           </div>
         </li>
@@ -58,7 +58,7 @@ const NavNotice = () => {
           <hr className="dropdown-divider" />
         </li>
 
-        <li className="dropdown-footer">
+        <li className="dropdown-footer d-flex justify-content-center">
           <a href="#">Show all notifications</a>
         </li>
       </ul>

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { useEffect, useState } from 'react';
 import CardFilter from '../Card/CardFilter';
 import RecentSalesTable from './RecentSalesTable';
@@ -12,7 +13,9 @@ const RecentSales = () => {
   };
 
   const fetchData = async () => {
-    const response = await fetch('http://localhost:4000/recentsales');
+    const response = await fetch(
+      `${process.env.REACT_APP_API_URL}/recentsales`
+    );
     const data = await response.json();
     setItems(data);
   };
